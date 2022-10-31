@@ -1,3 +1,12 @@
+
+/* VARIABLES */
+:root{
+    --darkCOLOR: #000;
+    --lightCOLOR: whitesmoke;
+    --backgroudCOLOR: papayawhip;
+    --highlightCOLOR: yellow;
+
+}
 /* RESETS */
 *,
 *::before,
@@ -12,7 +21,7 @@ html{
 }
 
 body{
-    background-color: yellow;
+    background-color: var(--backgroudCOLOR);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -21,13 +30,13 @@ img{
 }
 
 h1,h2,h3,h4,h5,h6{
-    color: #000;
+    color: var(--darkCOLOR);
     font-weight: 700;
 }
 
 a{
     text-decoration: none;
-    color: #000;
+    color: var(--darkCOLOR);
     transition: all 0.5s ease;
 }
 
@@ -54,7 +63,7 @@ img{
 
 .highlight{
     font-weight: bolder;
-    color: #339;
+    color: var(--darkCOLOR);
 }
 
 .nowrap{
@@ -66,7 +75,7 @@ img{
 .navbar .nav-link {
     font-weight: bold;
     text-transform: uppercase;
-    color: #000;
+    color: var(--darkCOLOR);
     transition: all 0.5s ease;
 }
 
@@ -82,8 +91,8 @@ img{
 @media screen and (min-width:992px){
     .navbar{
         min-height: 100vh;
-        width: 20%;
-        background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+        width: 15%;
+        background-image: var(--darkCOLOR);
         background-size: cover;
         background-position: center;
     }
@@ -93,7 +102,7 @@ img{
     }
 
     .content-container{
-        padding-left: 20%;
+        padding-left: 15%;
     }
 }
 
@@ -101,15 +110,15 @@ img{
 
 /* BUTTON */
 .btn{
-    border: 2px solid #000;
+    border: 2px solid var(--darkCOLOR);
     font-weight: bold;
 
 }
 
 .btn:hover,
 .btn:focus{
-    background-color: #000;
-    color: yellow;
+    background-color: var(--darkCOLOR);
+    color: var(--highlightCOLOR);
 }
 
 

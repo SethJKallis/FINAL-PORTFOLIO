@@ -135,7 +135,7 @@ img{
 
 /* END NAVIGATION */
 
-/* BUTTON */
+/* BUTTONS */
 .btn{
     border: 2px solid var(--darkCOLOR);
     font-weight: bold;
@@ -156,16 +156,175 @@ img{
 }
 
 .link-custom::after{
-    position: absolute;
     content: "";
+    position: absolute;
     width: 0%;
     height: 2px;
     left: 0;
     top: 110%;
     transition: all 0.5s ease;
-    background-color: #000;
+    background-color: var(--darkCOLOR);
 }
 
 .link-custom:hover::after{
     width: 100%;
 }
+
+/* EXPERIENCE SECTION */
+
+/* EDUCATION */
+#experience .education-section h3{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+#experience .education-section h3::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 25%;
+    top: 85%;
+    transition: all 0.5s ease;
+    background-color: var(--darkCOLOR);
+}
+
+#experience .education-section h3:hover::after {
+    width: 50%;
+}
+
+#experience .education-section .col{
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    padding: 0.5em;
+    background-color: var(--darkCOLOR);
+    color: var(--highlightCOLOR);
+}
+
+
+/* WORK */
+
+#experience .work-section h3{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+#experience .work-section h3::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 35%;
+    top: 85%;
+    transition: all 0.5s ease;
+    background-color: var(--darkCOLOR);
+}
+
+#experience .work-section h3:hover::after {
+    width: 30%;
+}
+
+#experience .work-section .col {
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    padding: 0.5em;
+    background-color: var(--darkCOLOR);
+    color: var(--highlightCOLOR);
+}
+
+
+/* SKILLS */
+#experience .skills-section h3{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+#experience .skills-section h3::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 30%;
+    top: 85%;
+    transition: all 0.5s ease;
+    background-color: var(--darkCOLOR);
+}
+
+#experience .skills-section h3:hover::after {
+    width: 40%;
+}
+
+#experience .skills-section ul {
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    padding: 0.5em;
+    background-color: #000;
+    color: var(--highlightCOLOR);
+}
+
+/* END EXPERIENCE SECTION */
+
+
+/* PROJECT SECTION */
+#projects .bootstrap-project {
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+#projects .bootstrap-project:hover,
+#projects .bootstrap-project:focus{
+    transform: scale(0.95);
+}
+
+#projects .bootstrap-project figure img{
+    /* border: 2px solid red; */
+    border-radius: 1rem;
+    min-width: 17.5rem;
+    max-width: 75%;
+}
+
+
+#projects .html-project {
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+#projects .html-project:hover,
+#projects .html-project:focus{
+    transform: scale(0.95);
+}
+
+#projects .html-project figure img{
+    /* border: 2px solid blue; */
+    border-radius: 1rem;
+    min-width: 17.5rem;
+    max-width: 45%;
+}
+
+#projects .css-project {
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+#projects .css-project:hover,
+#projects .css-project:focus{
+    transform: scale(0.95);
+}
+
+#projects .css-project figure img {
+    border-radius: 1rem;
+    min-width: 17.5rem;
+    max-width: 50%;
+
+}
+
+/* END PROJECT SECTION */

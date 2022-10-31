@@ -282,7 +282,7 @@ img{
 #projects .bootstrap-project figure img{
     /* border: 2px solid red; */
     border-radius: 1rem;
-    min-width: 17.5rem;
+    min-width: 17rem;
     max-width: 75%;
 }
 
@@ -303,7 +303,7 @@ img{
 #projects .html-project figure img{
     /* border: 2px solid blue; */
     border-radius: 1rem;
-    min-width: 17.5rem;
+    min-width: 17rem;
     max-width: 45%;
 }
 
@@ -322,7 +322,7 @@ img{
 
 #projects .css-project figure img {
     border-radius: 1rem;
-    min-width: 17.5rem;
+    min-width: 17rem;
     max-width: 50%;
 
 }

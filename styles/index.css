@@ -17,12 +17,15 @@
 } 
 
 html{
-    font-size: 1.25rem;
+    scroll-behavior: smooth;
+    
 }
 
 body{
-    background-color: var(--backgroudCOLOR);
+    
     font-family: 'Courier New', Courier, monospace;
+    background-image: url("/assets/images/pexels-tbee-82256.jpg");
+    background-size: cover;
 }
 
 img{
@@ -31,10 +34,10 @@ img{
 
 h1,h2,h3,h4,h5,h6{
     color: var(--darkCOLOR);
-    font-weight: 700;
+    font-weight: 900;
 }
 
-a{
+a:any-link{
     text-decoration: none;
     color: var(--darkCOLOR);
     transition: all 0.5s ease;
@@ -42,7 +45,7 @@ a{
 
 a:hover,
 a:focus{
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 img{
@@ -59,6 +62,7 @@ img{
     justify-content: center;
     align-items: center;
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.438);
+
 }
 
 .highlight{
@@ -72,6 +76,15 @@ img{
 /* END UTILITY */
 
 /*NAVIGATION*/
+.navbar a span{
+    color: var(--lightCOLOR);
+    transition: all 0.5s ease;
+}
+.navbar a span:hover{
+    color: var(--highlightCOLOR);
+    transform: scale(1.1);
+}
+
 .navbar .nav-link {
     font-weight: bold;
     text-transform: uppercase;
@@ -88,6 +101,7 @@ img{
 
 
 
+
 @media screen and (min-width:992px){
     .navbar{
         min-height: 100vh;
@@ -99,6 +113,19 @@ img{
 
     .navbar-brand img{
         border: 5px solid gold;
+    }
+
+    .navbar-brand img:hover{
+        animation: logoRotate 3s ease 0s infinite forwards;
+    }
+    
+    @keyframes logoRotate {
+        from{
+            transform: rotateY(0deg); 
+        }
+        to {
+        transform: rotateY(360deg);
+        }
     }
 
     .content-container{

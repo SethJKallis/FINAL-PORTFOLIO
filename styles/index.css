@@ -120,6 +120,10 @@ img{
 
 
 @media screen and (min-width:992px){
+    .content-container{
+        padding-left: 15%;
+    }
+
     .navbar{
         min-height: 100vh;
         width: 15%;
@@ -127,11 +131,11 @@ img{
         background-size: cover;
         background-position: center;
     }
-
+    
     .navbar-brand img{
         border: 5px solid gold;
     }
-
+    
     .navbar-brand img:hover{
         animation: logoRotate 3s ease 0s infinite forwards;
     }
@@ -141,14 +145,14 @@ img{
             transform: rotateY(0deg); 
         }
         to {
-        transform: rotateY(360deg);
+            transform: rotateY(360deg);
         }
     }
-
-    .content-container{
-        padding-left: 15%;
-    }
 }
+
+/* #projects{
+    scroll-margin-block-start: 500px;
+} */
 
 /* END NAVIGATION */
 
@@ -191,7 +195,6 @@ img{
 
 /* EDUCATION */
 #experience .education-section h3{
-    /* border: 2px solid red; */
     position: relative;
 }
 
@@ -228,7 +231,6 @@ img{
 /* WORK */
 
 #experience .work-section h3{
-    /* border: 2px solid red; */
     position: relative;
 }
 
@@ -264,7 +266,6 @@ img{
 
 /* SKILLS */
 #experience .skills-section h3{
-    /* border: 2px solid red; */
     position: relative;
 }
 
@@ -309,7 +310,6 @@ img{
 }
 
 #projects .html-project figure img{
-    /* border: 2px solid blue; */
     border-radius: 1rem;
     min-width: 17rem;
     max-width: 45%;
@@ -348,12 +348,10 @@ img{
 }
 
 #projects .bootstrap-project figure img{
-    /* border: 2px solid red; */
     border-radius: 1rem;
     min-width: 17rem;
     max-width: 75%;
 }
-
 
 /* PROJECT SECTION BUTTONS */
 #projects .html-project .btn-group a,
@@ -373,10 +371,5 @@ img{
     color: var(--highlightCOLOR);
     transform: scale(1.1);
 }
-
-
-
-
-
 
 /* END PROJECT SECTION */

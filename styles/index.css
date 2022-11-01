@@ -76,6 +76,23 @@ img{
 /* END UTILITY */
 
 /*NAVIGATION*/
+.navbar .navbar-toggler-icon:hover {
+    animation: nav-animation 0.5s ease 0s 1 forwards;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes nav-animation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+
+
+
+
 .navbar a span{
     color: var(--lightCOLOR);
     transition: all 0.5s ease;

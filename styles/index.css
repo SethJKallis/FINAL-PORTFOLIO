@@ -136,14 +136,14 @@ img{
 /* END NAVIGATION */
 
 /* BUTTONS */
-.btn{
+#home .btn{
     border: 2px solid var(--darkCOLOR);
     font-weight: bold;
 
 }
 
-.btn:hover,
-.btn:focus{
+#home .btn:hover,
+#home .btn:focus{
     background-color: var(--darkCOLOR);
     color: var(--highlightCOLOR);
 }
@@ -200,6 +200,11 @@ img{
     background-image: url(/assets/images/pexels-tbee-82256.jpg);
     background-size: cover;
     color: var(--darkCOLOR);
+    transition: all 0.5s ease;
+}
+
+#experience .education-section .box:hover{
+    transform: scale(0.95);
 }
 
 
@@ -232,6 +237,11 @@ img{
     background-image: url(/assets/images/pexels-tbee-82256.jpg);
     background-size: cover;
     color: var(--darkCOLOR);
+    transition: all 0.5s ease;
+}
+
+#experience .work-section .box:hover{
+    transform: scale(0.95);
 }
 
 
@@ -268,27 +278,6 @@ img{
 
 
 /* PROJECT SECTION */
-#projects .bootstrap-project {
-    border: 2px solid var(--darkCOLOR);
-    border-radius: 1rem;
-    background-image: url(/assets/images/pexels-tbee-82256.jpg);
-    background-size: cover;
-    transition: all 0.5s ease;
-}
-
-#projects .bootstrap-project:hover,
-#projects .bootstrap-project:focus{
-    transform: scale(0.95);
-}
-
-#projects .bootstrap-project figure img{
-    /* border: 2px solid red; */
-    border-radius: 1rem;
-    min-width: 17rem;
-    max-width: 75%;
-}
-
-
 #projects .html-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
@@ -326,7 +315,51 @@ img{
     border-radius: 1rem;
     min-width: 17rem;
     max-width: 50%;
-
 }
+
+#projects .bootstrap-project {
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+#projects .bootstrap-project:hover,
+#projects .bootstrap-project:focus{
+    transform: scale(0.95);
+}
+
+#projects .bootstrap-project figure img{
+    /* border: 2px solid red; */
+    border-radius: 1rem;
+    min-width: 17rem;
+    max-width: 75%;
+}
+
+
+/* PROJECT SECTION BUTTONS */
+#projects .html-project .btn-group a,
+#projects .bootstrap-project .btn-group a,
+#projects .css-project .btn-group a{
+    border: 2px solid var(--darkCOLOR);
+    transition: all 0.5s ease;
+}
+
+#projects .html-project .btn-group a:hover,
+#projects .html-project .btn-group a:focus,
+#projects .bootstrap-project .btn-group a:hover,
+#projects .bootstrap-project .btn-group a:focus,
+#projects .css-project .btn-group a:hover,
+#projects .css-project .btn-group a:focus{
+    background-color: var(--darkCOLOR);
+    color: var(--highlightCOLOR);
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 /* END PROJECT SECTION */

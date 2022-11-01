@@ -144,7 +144,18 @@
                         </div>
                   </div>
 
-                  <div class="bootstrap-project col col-sm-12 col-md">
+                  <div class="css-project col col-sm-12 col-lg">
+                        <div class="nowrap lead fw-bold display-6 mt-3 g-0 px-0">CSS Project</div>
+                        <figure>
+                          <img class="img-thumbnail mx-auto" src="/assets/images/css image.png" alt="CSS Image" >
+                        </figure>
+                        <div class="btn-group mb-3">
+                        <a href="https://github.com/SethJKallis/Portfolio" class="btn" target="_blank">GitHub</a>
+                        <a href="https://stellar-manatee-e65620.netlify.app/" class="btn" target="_blank">Netlify</a>
+                        </div>
+                  </div>
+
+                  <div class="bootstrap-project col col-sm-12 col-lg">
                     <div class="nowrap lead fw-bold display-6 mt-3">BootStrap Project</div>
                     <figure>
                       <img class="img-thumbnail mx-auto" src="/assets/images/bootstrap img.png" alt="Bootstrap Image">
@@ -154,17 +165,6 @@
                     <a href="https://magical-babka-58fa8c.netlify.app" class="btn" target="_blank">Netlify</a>
                     </div>
               </div>
-
-                  <div class="css-project col col-sm-12 col-lg">
-                        <div class="nowrap lead fw-bold display-6 mt-3 g-0 px-0">CSS Project</div>
-                        <figure>
-                          <img class="img-thumbnail mx-auto" src="/assets/images/css image.png" alt="CSS Image" >
-                        </figure>
-                        <div class="btn-group mb-3">
-                        <a href="" class="btn" target="_blank">GitHub</a>
-                        <a href="" class="btn" target="_blank">Netlify</a>
-                        </div>
-                  </div>
 
                   
 
@@ -185,6 +185,84 @@
             <!-- CONTACT SECTION -->
             <article id="contact" class="section-height">
               <h2 class="display-4 fw-bold">Contact</h2>
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <form action="https://formspree.io/f/xdojpnov" method="post">
+                      <fieldset>
+                        <legend class="display-5 fw-bold"></legend>
+                      <div class="row">
+                        <h3 class="fw-bold">Your Details:</h3>
+                        <div class="col-12 col-md mb-1">
+                          <input class="form-control text-center" name="firstName" id="firstName" type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="col-12 col-md mb-1">
+                          <input class="form-control text-center" name="lastName" id="lastName" type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="col-12 mb-1">
+                          <input class="form-control text-center" name="emailAddress" id="emailAddress" type="email" placeholder="Email Address" required>
+                        </div>
+                        <h3 class="fw-bold mt-3">Comments:</h3>
+                        <div class="col-12 mb-1">
+                          <textarea class="form-control text-center" name="comments" id="comments" cols="30" rows="5" placeholder="Let me know what you think!"></textarea>
+                        </div>
+                    </div>
+                      </fieldset>
+                      <div class="btn-group mt-1 mb-1">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 text-center">
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-dark mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+  More Contact Information
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title display-6 fw-bold" id="staticBackdropLabel">Contact Information:</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+        <h3>Physical Address</h3>
+        <address class="lead">
+          33 Mathew Road, <br> Claremont, <br> Cape Town, <br> 7708
+        </address>
+      </div>
+      <div class="container mb-4">
+        <h3>Phone Number</h3>
+        <a class="lead" href="tel:">064 933 8144</a>
+      </div>
+      <div class="container">
+        <h3>Email Address</h3>
+        <a class="lead" href="mailto:">kallisseth@gmail.com</a>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </article>
 
 

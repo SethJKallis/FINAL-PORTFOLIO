@@ -193,12 +193,13 @@ img{
     width: 50%;
 }
 
-#experience .education-section .col{
+#experience .education-section .box{
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     padding: 0.5em;
-    background-color: var(--darkCOLOR);
-    color: var(--highlightCOLOR);
+    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-size: cover;
+    color: var(--darkCOLOR);
 }
 
 
@@ -224,12 +225,13 @@ img{
     width: 30%;
 }
 
-#experience .work-section .col {
+#experience .work-section .box {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     padding: 0.5em;
-    background-color: var(--darkCOLOR);
-    color: var(--highlightCOLOR);
+    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-size: cover;
+    color: var(--darkCOLOR);
 }
 
 

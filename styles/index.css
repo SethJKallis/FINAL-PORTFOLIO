@@ -18,7 +18,7 @@
 
 html{
     scroll-behavior: smooth;
-    
+    /* overflow-x: hidden; */
 }
 
 body{
@@ -147,6 +147,12 @@ img{
         to {
             transform: rotateY(360deg);
         }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #projects{
+        scroll-margin-block-start: 56px;
     }
 }
 
@@ -350,7 +356,7 @@ img{
 #projects .bootstrap-project figure img{
     border-radius: 1rem;
     min-width: 17rem;
-    max-width: 75%;
+    max-width: 70%;
 }
 
 /* PROJECT SECTION BUTTONS */

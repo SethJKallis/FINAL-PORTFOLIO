@@ -5,7 +5,6 @@
     --lightCOLOR: whitesmoke;
     --backgroudCOLOR: papayawhip;
     --highlightCOLOR: yellow;
-
 }
 /* RESETS */
 *,
@@ -24,8 +23,9 @@ html{
 body{
     
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("/assets/images/pexels-tbee-82256.jpg");
+    background-image: url("/assets/images/pexels-dom-j-310452.jpg");
     background-size: cover;
+    color: var(--darkCOLOR);
 }
 
 img{
@@ -156,10 +156,6 @@ img{
     }
 }
 
-/* #projects{
-    scroll-margin-block-start: 500px;
-} */
-
 /* END NAVIGATION */
 
 /* BUTTONS */
@@ -223,7 +219,7 @@ img{
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     padding: 0.5em;
-    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-image: linear-gradient(rgba(255, 239, 213, 0),papayawhip);
     background-size: cover;
     color: var(--darkCOLOR);
     transition: all 0.5s ease;
@@ -259,7 +255,7 @@ img{
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
     padding: 0.5em;
-    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-image: linear-gradient(rgba(255, 239, 213, 0),papayawhip);
     background-size: cover;
     color: var(--darkCOLOR);
     transition: all 0.5s ease;
@@ -305,8 +301,8 @@ img{
 #projects .html-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
-    background-image: url(/assets/images/pexels-tbee-82256.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(255, 166, 0, 0),yellow);
+    background-size: contain;
     transition: all 0.5s ease;
 }
 
@@ -324,7 +320,7 @@ img{
 #projects .css-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
-    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-image: linear-gradient(rgba(0, 0, 255, 0), lightblue);
     background-size: cover;
     transition: all 0.5s ease;
 }
@@ -343,7 +339,7 @@ img{
 #projects .bootstrap-project {
     border: 2px solid var(--darkCOLOR);
     border-radius: 1rem;
-    background-image: url(/assets/images/pexels-tbee-82256.jpg);
+    background-image: linear-gradient(rgba(0, 0, 128, 0), rgba(2, 0, 128, 0.616), rgba(0, 0, 255, 0.247));
     background-size: cover;
     transition: all 0.5s ease;
 }
@@ -356,7 +352,7 @@ img{
 #projects .bootstrap-project figure img{
     border-radius: 1rem;
     min-width: 17rem;
-    max-width: 70%;
+    max-width: 75%;
 }
 
 /* PROJECT SECTION BUTTONS */
@@ -379,3 +375,4 @@ img{
 }
 
 /* END PROJECT SECTION */
+

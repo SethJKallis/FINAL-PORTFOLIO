@@ -17,7 +17,7 @@
 
 html{
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body{
@@ -76,9 +76,9 @@ img{
 /* END UTILITY */
 
 /*NAVIGATION*/
-.navbar .navbar-toggler-icon:hover {
+.navbar .navbar-toggler-icon:hover,
+.navbar .navbar-toggler-icon:focus {
     animation: nav-animation 0.5s ease 0s 1 forwards;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 @keyframes nav-animation {
@@ -136,8 +136,8 @@ img{
         border: 5px solid gold;
     }
     
-    .navbar-brand img:hover{
-        animation: logoRotate 3s ease 0s infinite forwards;
+    .navbar-brand img{
+        animation: logoRotate 4s ease 5s infinite alternate;
     }
     
     @keyframes logoRotate {
@@ -145,7 +145,7 @@ img{
             transform: rotateY(0deg); 
         }
         to {
-            transform: rotateY(360deg);
+            transform: rotateY(180deg);
         }
     }
 }
@@ -306,11 +306,6 @@ img{
     transition: all 0.5s ease;
 }
 
-#projects .html-project:hover,
-#projects .html-project:focus{
-    transform: scale(0.95);
-}
-
 #projects .html-project figure img{
     border-radius: 1rem;
     min-width: 17rem;
@@ -323,11 +318,6 @@ img{
     background-image: linear-gradient(rgba(0, 0, 255, 0), lightblue);
     background-size: cover;
     transition: all 0.5s ease;
-}
-
-#projects .css-project:hover,
-#projects .css-project:focus{
-    transform: scale(0.95);
 }
 
 #projects .css-project figure img {
@@ -343,17 +333,21 @@ img{
     background-size: cover;
     transition: all 0.5s ease;
 }
-
-#projects .bootstrap-project:hover,
-#projects .bootstrap-project:focus{
-    transform: scale(0.95);
-}
-
 #projects .bootstrap-project figure img{
     border-radius: 1rem;
     min-width: 17rem;
     max-width: 75%;
 }
+
+#projects .html-project:hover,
+#projects .html-project:focus,
+#projects .css-project:hover,
+#projects .css-project:focus,
+#projects .bootstrap-project:hover,
+#projects .bootstrap-project:focus{
+    transform: scale(0.95);
+}
+
 
 /* PROJECT SECTION BUTTONS */
 #projects .html-project .btn-group a,
@@ -376,3 +370,47 @@ img{
 
 /* END PROJECT SECTION */
 
+
+
+
+/* ABOUT SECTION */
+
+#about .html-skill{
+    background-image: linear-gradient(rgba(255, 166, 0, 0), rgb(255, 111, 0));
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1em;
+    transition: all 0.5s ease;
+}
+
+#about .css-skill {
+    background-image: linear-gradient(rgba(173, 216, 230, 0), rgb(0, 140, 255));
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1em;
+    transition: all 0.5s ease;
+}
+
+#about .bootstrap-skill {
+    background-image: linear-gradient(rgba(0, 0, 128, 0), navy);
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1em;
+    transition: all 0.5s ease;
+}
+
+#about .javascript-skill {
+    background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(255, 55, 0));
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1em;
+    transition: all 0.5s ease;
+}
+
+#about .html-skill:hover,
+#about .html-skill:focus,
+#about .css-skill:hover,
+#about .css-skill:focus,
+#about .bootstrap-skill:hover,
+#about .bootstrap-skill:focus,
+#about .javascript-skill:hover,
+#about .javascript-skill:focus{
+ transform: scale(0.95);
+}
+/* END ABOUT SECTION */

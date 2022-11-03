@@ -23,7 +23,7 @@ html{
 body{
     
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("/assets/images/pexels-dom-j-310452.jpg");
+    background-image: url("/assets/images/pexels-tbee-82256.jpg");
     background-size: cover;
     color: var(--darkCOLOR);
 }
@@ -151,8 +151,11 @@ img{
 }
 
 @media screen and (max-width: 992px) {
-    #projects{
-        scroll-margin-block-start: 56px;
+    #experience,
+    #projects,
+    #about,
+    #contact{
+        scroll-margin-block: 58px;
     }
 }
 

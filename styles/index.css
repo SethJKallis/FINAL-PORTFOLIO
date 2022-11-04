@@ -20,6 +20,17 @@ html{
     overflow-x: hidden;
 }
 
+@media screen and (min-width: 360px) {
+    html{
+        font-size: larger;
+    }
+}
+@media screen and (min-width: 720px) {
+    html{
+        font-size: large;
+    }
+}
+
 body{
     font-family: 'Courier New', Courier, monospace;
     background-image: url("../assets/images/pexels-tbee-82256.jpg");
@@ -453,11 +464,15 @@ a:focus{
 /* END ABOUT SECTION */
 
 /* CONTACT SECTION */
+#contact .container .btn-group a{
+    transition: all 0.5s ease;
+}
+
 
 #contact .container .btn-group a:hover {
 background-color: var(--darkCOLOR);
 color: var(--highlightCOLOR);
-border-radius: 50%;
+transform: scale(1.15);
 }
 
 /* END CONTACT SECTION */

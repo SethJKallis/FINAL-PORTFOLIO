@@ -13,9 +13,9 @@
 <body>
     <header>
         <!--NAVIGATION BAR-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top animate__animated animate__fadeIn">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">  
             <div class="container-fluid d-lg-flex flex-lg-column">
-              <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+              <a class="navbar-brand mx-lg-auto mb-lg-4" href="#home">
                 <span class="h4 fw-bold d-block d-lg-none my-auto">Portfolio</span>
                 <figure class="container-fluid d-none d-lg-block">
                     <img src="/assets/images/real-estate-logo-600w-1615688014.webp" alt="SiteLogo" class="img-thumbnail rounded-circle d-none d-lg-block">
@@ -57,19 +57,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg">
-                            <h1 class="display-2 fw-bold animate__animated animate__bounce">Good Day, I'm <span class="highlight">Seth Kallis</span></h1>
-                            <p class="lead animate__animated animate__fadeIn">I am an aspiring developer and this is my Portfolio.</p>
-                            <span class="animate__animated animate__animated animate__fadeIn">
-                            <a href="#experience" class="btn btn-brand me-3 animate__animated animate__pulse animate__infinite">Learn More</a>
+                            <h1 class="display-2 fw-bold">Good Day, I'm <span class="highlight">Seth Kallis</span></h1>
+                            <p class="lead">I am an aspiring developer and this is my Portfolio.</p>
+                            <span class="nowrap">
+                            <a href="#experience" class="btn btn-brand me-3">Learn More</a>
                             </span>
-                            <a href="tel:" class="link-custom"><span class="nowrap animate__animated animate__fadeIn">Call Me:064 933 8144</span></a>
+                            <a href="tel:" class="link-custom"><span class="nowrap">Call Me:064 933 8144</span></a>
                         </div>
                     </div>
                 </div>
             </article>
 
             <!-- EXPERIENCE SECTION -->
-            <article id="experience" class="section-height animate__animated animate__fadeInUp">
+            <article id="experience" class="section-height">
               <h2 class="display-4 fw-bold">Experience</h2>
               <div class="container-fluid">
               <div class="row gap-1">
@@ -171,39 +171,106 @@
             <!-- TESTIMONIALS SECTION -->
             <article id="testimonials" class="section-height">
               <h2 class="display-4 fw-bold">Testimonials</h2>
-                  <div id="carousel" class="carousel slide text-center " data-bs-ride="carousel">
+                  <div id="carousel" class="carousel slide text-center w-75" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="5000">
-                        <div class="container border w-75" data-bs-interval="5000">
 
+                      <div class="carousel-item active itemOne position-relative" data-bs-interval="5000">
+                        <div class="container d-flex justify-content-center" data-bs-interval="5000">
+
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="assets/images/bootstrap img.png" alt="Camryn">
+                              </div>
+                              <div class="flip-card-back">
+                                
+                                <p>"Seth Kallis is an exceptional person and colleague, very down to earth. He grasps new ideas very quickly which makes him a very valuable asset to any organization that is lucky to have him." <br><br> -Camryn</p>
+                            
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="carousel-item itemTwo" data-bs-interval="5000">
+                        <div class="container d-flex justify-content-center">
+                          
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="#" alt="Mathew Thomas">
+                              </div>
+                              <div class="flip-card-back">
+                                
+                                <p>"Seth is quite a creative and open minded colleague that works well with the task at hand. He thinks of others without compromising his ethical integrity." <br><br> -Mathew Thomas</p>
+                            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item itemThree" data-bs-interval="5000">
+                        <div class="container d-flex justify-content-center">
+
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="#" alt="Lazola">
+                              </div>
+                              <div class="flip-card-back">
+                                
+                                <p>"Seth is a fast learner. He is always eager and inclined to know more. He is a team player and can be a valuable asset to your company." <br><br> -Laz</p>
+                            
+                              </div>
+                            </div>
+                          </div>
                           
 
 
+                        </div>
+                      </div>
 
-                          <!-- <p>"Seth Kallis is an exceptional person and colleague, very down to earth. He grasps new ideas very quickly which makes him a very valuable asset to any organization that is lucky to have him." <br> -Camryn</p> -->
+                      <div class="carousel-item itemFour" data-bs-interval="5000">
 
+                        <div class="container d-flex justify-content-center">
                           
+                          
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="" alt="Faeezy">
+                              </div>
+                              <div class="flip-card-back">
+                                <p>"Seth is a hardworking person, is committed to the task at hand and never let's anything get in his way. A hard-working person focused on growth, knowledge and is diligent worker." <br><br> -Faeez</p>
+                                
+                            
+                              </div>
+                            </div>
+                          </div>
                         </div>
+
                       </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <div class="container border w-75 ">
-                          <p>"Seth is quite a creative and open minded colleague that works well with the task at hand. He has learnt many things while we have worked together as well as taught me some things. He thinks of others without compromising his ethical integrity. I am proud to recommend him as a fellow colleague and developer." <br> -Mathew Thomas</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <div class="container border w-75">
-                          <p>"Seth is a fast learner. He is always eager and inclined to know more. He is a team player and can be a valuable asset to your company." <br> -Laz</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <div class="container border w-75">
-                          <p>"Seth is a hardworking person, is committed to the task at hand and never let's anything get in his way. A hard-working person focused on growth, knowledge and is diligent worker." <br> -Faeez</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <div class="container border w-75">
-                          <p>"Seth is a dedicated, very creative, go-getter, and well-behaved student. He does enjoy working with his classmates and works well on his project.
-                            He has gained knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired as a developer." <br> -Joel</p>
+
+                      <div class="carousel-item itemFive" data-bs-interval="5000">
+                        <div class="container d-flex justify-content-center">
+
+                            <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="#" alt="Joel">
+                              </div>
+                              <div class="flip-card-back">
+                                <p>"Seth is a dedicated, creative, go-getter, and well-behaved student. He enjoys working with his classmates and works well on his project.
+                                  He has gained knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired as a developer." <br><br> -Joel</p>
+                        
+                                
+                            
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
 
@@ -229,7 +296,7 @@
                     <h3>HTML</h3>
                     <p class="lead nowrap">(In progress)</p>
                     <div class="progress">
-                      <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                      <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
                     </div>
                   </div>
 
@@ -247,7 +314,7 @@
                     <h3>Bootstrap</h3>
                     <p class="lead nowrap">(In progress)</p>
                     <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
                     </div>
                   </div>
 

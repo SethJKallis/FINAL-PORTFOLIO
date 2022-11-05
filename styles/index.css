@@ -177,7 +177,24 @@ a:focus{
 
 /* END NAVIGATION */
 
-/* BUTTONS */
+/* HOME section */
+#home {
+    animation: homeAnimation 2.5s ease 0s 1 forwards;
+}
+
+@keyframes homeAnimation {
+    from{
+        transform: scale(2);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
 #home .btn{
     border: 2px solid var(--darkCOLOR);
     font-weight: bold;

@@ -123,7 +123,18 @@ a:focus{
     letter-spacing: 0.15em;
 }
 
+.navbar-brand .siteLogo {
+    animation: siteLogo 3s linear 0s infinite;
+}
 
+@keyframes siteLogo {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 
 @media screen and (min-width:992px){
@@ -139,11 +150,7 @@ a:focus{
         background-position: center;
     }
     
-    .navbar-brand img{
-        border: 5px solid gold;
-    }
-    
-    .navbar-brand img{
+    .navbar-brand .profilePicture{
         animation: logoRotate 4s ease 5s infinite alternate;
     }
     
@@ -459,7 +466,19 @@ a:focus{
 #about .bootstrap-skill:focus,
 #about .javascript-skill:hover,
 #about .javascript-skill:focus{
- transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+#about .aspirations {
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1em;
+    background-image: linear-gradient(rgba(255, 239, 213, 0), papayawhip);
+    transition: all 0.5s ease;
+}
+
+#about .aspirations:hover,
+#about .aspirations:focus {
+    transform: scale(0.95);
 }
 /* END ABOUT SECTION */
 
@@ -475,4 +494,35 @@ color: var(--highlightCOLOR);
 transform: scale(1.15);
 }
 
+#contact .modelBtn {
+    background-color: var(--darkCOLOR);
+    color: var(--lightCOLOR);
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    transition: all  0.5s ease;
+}
+
+#contact .modelBtn:hover,
+#contact .modelBtn:focus{
+    color: var(--highlightCOLOR);
+    transform: scale(1.15);
+    font-weight: bold;
+}
+
 /* END CONTACT SECTION */
+
+/* FOOTER */
+#footer .backHome {
+    color: var(--lightCOLOR);
+    border: 2px solid var(--darkCOLOR);
+    border-radius: 1rem;
+    background-color: var(--darkCOLOR);
+    transition: all 0.5s ease;
+}
+
+#footer .backHome:hover,
+#footer .backHome:focus {
+    color: var(--highlightCOLOR);
+    transform: scale(1.15);
+}
+/* END FOOTER */
